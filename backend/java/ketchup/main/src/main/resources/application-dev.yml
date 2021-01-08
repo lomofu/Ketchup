@@ -1,0 +1,25 @@
+server:
+  port: 8089
+  http2:
+    enabled: true
+  undertow:
+    buffer-size: 1024
+    direct-buffers: true
+    max-http-post-size: 1000
+    threads:
+      io: 8
+      worker: 64
+
+app:
+  env: DEV
+
+spring:
+  application:
+    name: Ketchup
+
+  servlet:
+    multipart:
+      file-size-threshold: 10485760
+      max-file-size: 1MB
+  mvc:
+    throw-exception-if-no-handler-found: true
