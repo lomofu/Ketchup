@@ -4,7 +4,9 @@ import com.fwll.common.utils.SpringContextHelper;
 import com.fwll.main.config.AppConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
+import tk.mybatis.spring.annotation.MapperScan;
 
 /**
  * @author lomofu
@@ -12,6 +14,8 @@ import org.springframework.context.annotation.Import;
  * @create 08/Jan/2021 00:12
  */
 @SpringBootApplication
+@MapperScan(basePackages = "com.fwll.*.dao")
+@ComponentScan(basePackages = "com.fwll.*")
 @Import(value = SpringContextHelper.class)
 public class BootApplication {
   public static void main(String[] args) {
