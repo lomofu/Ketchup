@@ -26,6 +26,8 @@
     <modules>
         <module>main</module>
         <module>common-lib</module>
+        <module>account</module>
+        <module>post</module>
     </modules>
 
     <dependencies>
@@ -102,6 +104,7 @@
                                 <artifactId>spring-boot-configuration-processor</artifactId>
                             </exclude>
                         </excludes>
+                        <mainClass>com.fwll.BootApplication</mainClass>
                     </configuration>
                     <executions>
                         <execution>

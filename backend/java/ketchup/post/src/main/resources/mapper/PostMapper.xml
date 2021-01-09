@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fwll.post.dao.PostMapper">
+  <resultMap id="BaseResultMap" type="com.fwll.post.domain.Post">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="post_id" jdbcType="VARCHAR" property="postId" />
+    <result column="post_title" jdbcType="VARCHAR" property="postTitle" />
+    <result column="post_create_time" jdbcType="TIMESTAMP" property="postCreateTime" />
+    <result column="post_update_time" jdbcType="TIMESTAMP" property="postUpdateTime" />
+    <result column="post_size" jdbcType="VARCHAR" property="postSize" />
+    <result column="post_mark" jdbcType="INTEGER" property="postMark" />
+    <result column="post_errors" jdbcType="INTEGER" property="postErrors" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="is_active" jdbcType="BIT" property="isActive" />
+    <result column="post_content" jdbcType="LONGVARCHAR" property="postContent" />
+    <result column="post_extra" jdbcType="LONGVARCHAR" property="postExtra" />
+  </resultMap>
+</mapper>
