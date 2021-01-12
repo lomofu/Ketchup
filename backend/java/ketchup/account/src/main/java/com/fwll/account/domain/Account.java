@@ -1,6 +1,7 @@
 package com.fwll.account.domain;
 
 import com.fwll.common.utils.UUIDHelper;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import tk.mybatis.mapper.annotation.KeySql;
@@ -12,6 +13,7 @@ import java.util.Date;
 
 @Setter
 @Getter
+@Builder(toBuilder = true)
 @Table(name = "account")
 public class Account {
   /** id */

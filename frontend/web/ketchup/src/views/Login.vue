@@ -1,12 +1,12 @@
 <template>
   <div class="l-container d-flex flex-column justify-center">
     <k-nav />
-    <v-card class="align-self-center" width="400">
+    <v-card class="align-self-center animated fadeInUp delay-z1s" width="360">
       <div class="line" />
       <p class="l-headline ma-8">Member Login</p>
       <panel />
     </v-card>
-    <div class=" signup text-center mt-8">
+    <div class="signup text-center mt-8 animated fadeInUp delay-z3s">
       Haven't an account? <router-link to="/signup">Sign up</router-link>
     </div>
   </div>
@@ -27,7 +27,10 @@ export default {
 <style scoped>
 .l-container {
   height: 100%;
-  width: 100vw;
+  width: auto;
+  background-image: url("../assets/img/login/login_background.png");
+  background-size: 36%;
+  background-position: left 88%;
 }
 .line {
   background: #40e0d0; /* fallback for old browsers */

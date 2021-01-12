@@ -4,6 +4,8 @@ import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
 import animated from "animate.css";
+import "@/assets/css/font.css";
+import "@/assets/css/app.css";
 
 Vue.config.productionTip = false;
 Vue.use(animated);

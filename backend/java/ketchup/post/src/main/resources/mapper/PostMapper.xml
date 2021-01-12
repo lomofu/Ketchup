@@ -9,9 +9,9 @@
     <result column="post_title" jdbcType="VARCHAR" property="postTitle" />
     <result column="post_create_time" jdbcType="TIMESTAMP" property="postCreateTime" />
     <result column="post_update_time" jdbcType="TIMESTAMP" property="postUpdateTime" />
-    <result column="post_size" jdbcType="VARCHAR" property="postSize" />
-    <result column="post_mark" jdbcType="INTEGER" property="postMark" />
-    <result column="post_errors" jdbcType="INTEGER" property="postErrors" />
+    <result column="post_size" jdbcType="INTEGER" property="postSize" />
+    <result column="post_mark" jdbcType="TINYINT" property="postMark" />
+    <result column="post_errors" jdbcType="SMALLINT" property="postErrors" />
     <result column="user_id" jdbcType="VARCHAR" property="userId" />
     <result column="is_active" jdbcType="BIT" property="isActive" />
     <result column="post_content" jdbcType="LONGVARCHAR" property="postContent" />
