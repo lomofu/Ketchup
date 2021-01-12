@@ -1,0 +1,26 @@
+.proxima-soft {
+  font-family: "Proxima Soft Regular", "sans-serif";
+}
+
+.proxima-soft-semi {
+  font-family: "Proxima Soft Semi Bold", "sans-serif";
+}
+
+.animated {
+  -webkit-animation-duration: 0.6s !important;
+  animation-duration: 0.6s !important;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.delay-z1s {
+  animation-delay: 0.1s;
+}
+
+.animated.delay-z3s {
+  animation-delay: 0.3s;
+}
+
+.animated.delay-z5s {
+  animation-delay: 0.5s;
+}

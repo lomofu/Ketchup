@@ -5,7 +5,7 @@
         <v-col cols="4">
           <p class="title">Contact</p>
           <v-icon medium>
-            fa-github
+            fab fa-github
           </v-icon>
         </v-col>
       </v-row>
@@ -32,7 +32,7 @@ export default {
   max-height: 250px;
 }
 
-.title{
+.title {
   font-weight: bold;
   font-size: 24px;
 }

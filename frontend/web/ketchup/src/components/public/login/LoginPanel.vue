@@ -47,6 +47,10 @@ export default {
   methods: {
     login() {
       this.$v.$touch();
+      if (this.$v.$error) {
+        return false;
+      }
+      this.$router.push("index");
     }
   },
   computed: {

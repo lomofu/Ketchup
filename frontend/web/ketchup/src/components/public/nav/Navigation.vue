@@ -5,12 +5,13 @@
         class="ml-8"
         max-height="50"
         max-width="50"
-        src="../../../assets/tomato.svg"
+        src="../../../assets/img/tomato.svg"
       >
       </v-img>
-      <v-toolbar-title class="ml-5 mt-1">
-        <span class="title">Ketchup</span>
+      <v-toolbar-title class="ml-5 mt-2">
+        <span class="proxima-soft-semi title-text">Ketchup</span>
       </v-toolbar-title>
+
       <v-spacer />
       <v-btn
         v-if="isShow"
@@ -19,11 +20,12 @@
         outlined
         @click="handleClick"
       >
-        <v-icon left>fa-sign-in</v-icon>
+        <v-icon small left>fa-sign-in-alt</v-icon>
         Sign in
       </v-btn>
       <div class="sendMeBack mr-8" v-else>
-        <span></span>Send me back to the <router-link to="/">home page</router-link>
+        Send me back to the
+        <router-link to="/">home page</router-link>
       </div>
     </v-row>
   </v-app-bar>
@@ -50,13 +52,14 @@ export default {
 </script>
 
 <style scoped>
-.title {
+.title-text {
   font-weight: bolder;
+  font-size: 25px;
 }
 .btn {
   border-radius: 5px;
 }
-.sendMeBack{
+.sendMeBack {
   color: gray;
   font-size: 12px;
 }

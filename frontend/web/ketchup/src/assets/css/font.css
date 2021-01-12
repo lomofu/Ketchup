@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Proxima Soft Regular";
+    src: url("../font/proimanova/proximanovasoft-regular.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Soft Semi Bold";
+    src: url("../font/proimanova/proximanovasoft-semibold.woff");
+    font-weight: normal;
+    font-style: normal;
+}
