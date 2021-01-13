@@ -1,8 +1,8 @@
 <template>
   <v-row>
     <v-col class="d-flex justify-lg-space-between" cols="12">
-      <v-btn dark depressed color="green">
-        <v-icon small>
+      <v-btn class="hvr-icon-grow" dark depressed color="green">
+        <v-icon class="hvr-icon" small>
           fa-file
         </v-icon>
         <span class="ml-3">New</span>

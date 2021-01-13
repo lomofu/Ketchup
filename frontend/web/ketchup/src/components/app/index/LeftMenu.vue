@@ -24,7 +24,7 @@
               </v-icon>
             </v-btn>
           </template>
-          <span>{{ mini ? "expand" : "shrink" }}</span>
+          <span>{{ mini ? "Expand" : "Shrink" }}</span>
         </v-tooltip>
       </div>
       <div class="mt-4 d-flex ml-12">
@@ -53,13 +53,14 @@
     <v-list nav :dense="!mini" class="mt-3">
       <v-list-item-group eager v-model="selectedItem" color="white">
         <v-list-item
+          class="hvr-icon-fade"
           v-for="item in items"
           :key="item.title"
           link
           @click="handleClickItem(item)"
         >
           <v-list-item-icon :class="mini ? null : 'ml-8'">
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon class="hvr-icon">{{ item.icon }}</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -71,17 +72,14 @@
 </template>
 
 <script>
+import { LEFT_MENU } from "@/common/app/AppConstant";
+
 export default {
   name: "LeftMenu",
   data: () => ({
     mini: false,
     selectedItem: 0,
-    items: [
-      { title: "My Ketchup", icon: "fa-home", path: "/index" },
-      { title: "Account", icon: "fa-user-circle", path: "/index/account" },
-      { title: "Preferences", icon: "fa-cog", path: "/index/setting" },
-      { title: "Log out", icon: "fa-power-off", path: "/" }
-    ]
+    items: LEFT_MENU
   }),
   methods: {
     handleClick() {

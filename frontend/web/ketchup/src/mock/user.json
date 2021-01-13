@@ -1,0 +1,17 @@
+{
+  "id": "1111",
+  "name": "Sandra Adams",
+  "email": " sandra_a88@gmail.com",
+  "phone": "7126398987",
+  "gender": 1,
+  "avatarUrl": "https://randomuser.me/api/portraits/women/85.jpg",
+  "createTime": "08/01/2020",
+  "language": "english",
+  "position": "student",
+  "preference": {
+    "theme": "light",
+    "language": "english",
+    "writeFor": "school",
+    "dateFormat": "dd/MM/yyyy HH:mm:ss"
+  }
+}

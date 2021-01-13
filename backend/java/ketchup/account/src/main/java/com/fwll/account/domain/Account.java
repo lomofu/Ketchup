@@ -1,9 +1,7 @@
 package com.fwll.account.domain;
 
 import com.fwll.common.utils.UUIDHelper;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import tk.mybatis.mapper.annotation.KeySql;
 
 import javax.persistence.Column;
@@ -11,10 +9,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
 
+/**
+ * @author lomofu
+ */
 @Setter
 @Getter
 @Builder(toBuilder = true)
 @Table(name = "account")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Account {
   /** id */
   @Id

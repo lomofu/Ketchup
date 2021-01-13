@@ -32,7 +32,7 @@ const routes = [
         },
         component: () =>
           import(
-            /* webpackChunkName: "home/my-ketchup"*/ "../views/app/MyKetchup"
+            /* webpackChunkName: "index/my-ketchup"*/ "../views/app/MyKetchup"
           )
       },
       {
@@ -42,7 +42,18 @@ const routes = [
           title: "Account"
         },
         component: () =>
-          import(/* webpackChunkName: "home/account" */ "../views/app/Account")
+          import(/* webpackChunkName: "index/account" */ "../views/app/Account")
+      },
+      {
+        path: "account/info",
+        name: "Personal Info",
+        meta: {
+          title: "Personal Info"
+        },
+        component: () =>
+          import(
+            /* webpackChunkName: "index/account/info" */ "../views/app/account/PersonInfo"
+          )
       }
     ]
   }

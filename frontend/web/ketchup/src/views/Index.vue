@@ -12,6 +12,7 @@
         <v-spacer />
       </v-row>
     </v-main>
+    <v-responsive height="50" />
   </div>
 </template>
 
@@ -24,5 +25,3 @@ export default {
   }
 };
 </script>
-
-<style scoped></style>

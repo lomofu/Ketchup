@@ -33,12 +33,11 @@ export default {
   }),
   methods: {
     handleScroll() {
-      let me = this;
       let scrollTop =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop;
-      me.navBtn.btnShow = scrollTop > 120;
+      this.navBtn.btnShow = scrollTop > 100;
     }
   },
   created() {
